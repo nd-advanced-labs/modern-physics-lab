@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modern Physics Laboratory · Notre Dame</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap">
+<h1>Modern Physics Laboratory</h1>
+<div class="meta">PHYS 41441 / 61701 · Fall 2026 · University of Notre Dame</div>
+<div class="tag">Jordan Hall 305 &amp; 308 · Tuesday/Thursday 2:00&ndash;5:00 PM · Instructor: Ali Hanks · TA: Wesley Sutton</div>
+</div></header>
+<main>
+
+<h2>Welcome</h2>
+<p class="sub">The objective of this course is to become familiar with the equipment and
+techniques of experimental physics: radiation detectors and their signals, electronic
+signal processing (timing and energy), data acquisition, statistical analysis and curve
+fitting, and the communication of results in the forms working physicists actually use,
+journal-style reports, posters, and talks. Most of the experiments in this lab replicate
+breakthrough measurements that earned (or famously deserved) Nobel Prizes; you will
+reproduce them with research-grade equipment.</p>
+
+<h2>Course Schedule</h2>
+<p class="sub">The semester at a glance. The authoritative version lives in the syllabus;
+updates appear here as they happen.</p>
+<table>
+<tr><th>Week</th><th>Dates (T/Th)</th><th>Activity</th><th>Due</th></tr>
+<tr><td>1</td><td>Aug 25, 27</td><td>Safety & radiation, statistics & curve fitting, station tour, experiment walk-through</td><td>Lab-preference form [end of week 1]</td></tr>
+<tr><td>2</td><td>Sep 1, 3</td><td>Bootcamp, half 1 (energy or timing, by group)</td><td>Week-1 statistics homework TBD</td></tr>
+<tr><td>3</td><td>Sep 8, 10</td><td>Bootcamp, half 2</td><td>Notebook submission #1 Tue; <strong>Bootcamp worksheet + write-up</strong> end of week</td></tr>
+<tr><td>4</td><td>Sep 15, 17</td><td><strong>Rotation 1</strong> begins</td><td>Notebook submission #2 Tue</td></tr>
+<tr><td>5</td><td>Sep 22, 24</td><td>Rotation 1</td><td></td></tr>
+<tr><td>6</td><td>Sep 29, Oct 1</td><td>Rotation 1: analysis & writing</td><td><strong>Report</strong> due Fri Oct 2</td></tr>
+<tr><td>7</td><td>Oct 6, 8</td><td><strong>Rotation 2</strong> begins</td><td>report reviews returned; revisions due ~Oct 13</td></tr>
+<tr><td>8</td><td>Oct 13, 15</td><td>Rotation 2</td><td></td></tr>
+<tr><td></td><td>Oct 17–25</td><td><strong>Fall break</strong></td><td></td></tr>
+<tr><td>9</td><td>Oct 27, 29</td><td>Rotation 2: analysis & poster</td><td><strong>Poster</strong> file due Mon Nov 2 (printing)</td></tr>
+<tr><td>10</td><td>Nov 3, 5</td><td><strong>Tue: POSTER SESSION</strong> · Th: <strong>Rotation 3</strong> begins</td><td>poster presentation Tue</td></tr>
+<tr><td>11</td><td>Nov 10, 12</td><td>Rotation 3</td><td></td></tr>
+<tr><td>12</td><td>Nov 17, 19</td><td>Rotation 3</td><td></td></tr>
+<tr><td>13</td><td>Nov 24</td><td>Rotation 3 wrap (Tue only, Thanksgiving Nov 25–29)</td><td>TBD</td></tr>
+<tr><td>14</td><td>Dec 1, 3</td><td><strong>Research presentations</strong></td><td></td></tr>
+<tr><td>15</td><td>Dec 8</td><td>Research presentations (last class meeting)</td><td></td></tr>
+</table>
+
+<h2>The Experiments</h2>
+<p class="sub">You will perform three experiments, one from each category below, ranked
+by preference form in week&nbsp;1. Click an experiment to read what it measures and why it
+matters. <strong>Challenge labs</strong> are harder and more independent, with less
+instructor help available; they are open by petition as a follow-up within the same
+category. Each experiment's <em>Lab content</em> link leads to its shared folder with the
+lab notebook and worksheet.</p>
+<h3 class="cat">Energy spectroscopy</h3>
+<details>
+<summary>Alpha Spectroscopy</summary>
+<div class="body">
+<p>When a charged particle plows through matter, it loses energy in
+thousands of tiny collisions with electrons, and the rate of that loss,
+the <em>stopping power</em>, is one of the most consequential quantities
+in applied physics. It decides how thick a spacecraft’s shielding must
+be, how deep a proton-therapy beam penetrates before depositing its dose
+in a tumor, and how a particle detector tells one particle from another.
+In this experiment you send alpha particles through metal foils inside a
+vacuum chamber and watch their energy drain away, turning a century-old
+piece of physics (first worked out by Bohr and Bethe) into numbers you
+measured yourself. The sharp rise in energy loss just before a charged
+particle stops, the <em>Bragg peak</em>, carries the name of William
+Henry Bragg, who mapped alpha stopping in the 1900s, and it is the
+reason charged-particle therapy works: a proton beam can be tuned to
+dump its dose at a tumor’s depth and almost nowhere else. The newest
+frontier takes your exact subject to its extreme: <em>targeted alpha
+therapy</em> attaches alpha emitters to tumor-seeking molecules, and
+because an alpha’s stopping power is so enormous, its entire lethal dose
+lands within a few cell diameters of where it decays, killing the cancer
+cell it’s docked to while sparing the neighborhood.</p>
+<p>The physics has a satisfying <em>why</em> to it: a slow particle
+lingers near each electron it passes, so the slower an alpha gets, the
+harder it brakes (stopping power grows roughly as 1/v²), until it dumps
+everything at once and stops. That is the whole secret of the Bragg
+peak. And the same signature, how hard a particle brakes versus how fast
+it moves, is how modern detectors from collider experiments to space
+instruments tell one particle species from another, which makes this lab
+a first lesson in particle identification.</p>
+<p><strong>What you will measure:</strong> the energy spectrum of an
+alpha source, and the energy lost in foils of different metals and
+thicknesses, giving you the stopping power dE/dx of each material and a
+comparison against theory.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Gamma Spectroscopy</summary>
+<div class="body">
+<p>Every radioactive nucleus broadcasts its identity as a fingerprint of
+gamma-ray energies, and reading that fingerprint is how we monitor
+reactors, screen cargo for smuggled nuclear material, date
+archaeological finds, and identify newly synthesized elements. The
+instrument of choice is the <em>high-purity germanium</em> (HPGe)
+detector, a single crystal of the purest material humans know how to
+make, whose energy resolution is sharp enough to split lines that other
+detectors blur together. That sharpness also opens a window into nuclear
+structure: some nuclei rotate like tiny quantum tops, and their spectra
+form <em>rotational bands</em> whose spacing reveals the shape and
+moment of inertia of the nucleus itself. And the moment of inertia is
+where it gets genuinely strange, because measuring it amounts to asking:
+when a nucleus spins, what kind of object is it? A rigid body gives one
+answer, a drop of ordinary fluid gives another, and the measured value
+refuses both, landing stubbornly in between, because the paired nucleons
+form something like a <em>superfluid</em> that only partially follows
+the rotation. Your measurement catches a 166-nucleon quantum superfluid
+in the act of being neither solid nor liquid; explaining that weirdness
+earned Aage Bohr, Ben Mottelson, and James Rainwater the 1975 Nobel
+Prize.</p>
+<p><strong>What you will measure:</strong> calibrated gamma-ray spectra
+from known and unknown sources, the energy resolution of your detector,
+and the rotational band of a deformed nucleus, from which you extract
+its moment of inertia and test it against the rigid-body and fluid
+pictures, expecting it to match neither.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Rutherford Scattering</summary>
+<div class="body">
+<p>In 1911 this experiment rewrote the atom. The picture going in was
+J.J. Thomson’s “plum pudding”: electrons studded through a diffuse ball
+of positive charge, the atom’s mass and charge spread smoothly, nothing
+hard anywhere inside. In that atom an alpha particle has nothing to hit,
+so it should shoulder straight through a gold foil’s thousands of atomic
+layers, nudged by tiny fractions of a degree, and even the accumulated
+wobble of all those nudges predicts essentially nothing at large angles.
+That is what Rutherford, already a Nobel laureate for his radioactivity
+work, expected when he set Hans Geiger and a twenty-year-old
+undergraduate, Ernest Marsden, to watch for scattered alphas. Instead,
+roughly one alpha in eight thousand came back at large angles, thousands
+of times too many for any smeared-out atom to explain: a single violent
+deflection, off something tiny, heavy, and charged. The atom’s mass and
+positive charge had to be packed into a nucleus a hundred thousand times
+smaller than the atom itself. Rutherford later called it the most
+incredible event of his life, “as if you fired a 15-inch shell at a
+piece of tissue paper and it came back and hit you.” The method they
+invented, firing a beam at a target and reading the structure of the
+target from the angles things scatter to, is still how we interrogate
+matter today, from electron microscopes to the Large Hadron Collider.
+Here you repeat the discovery with your own hands and test whether the
+scattering really follows Rutherford’s famous prediction.</p>
+<p><strong>What you will measure:</strong> the rate of alpha particles
+scattered from a metal foil as a function of angle, testing the
+characteristic 1/sin⁴(θ/2) dependence that signals a pointlike, charged
+nucleus.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Compton Scattering</summary>
+<div class="body">
+<p>Is light a wave or a particle? By 1923 the photon idea was still
+contested, and Compton’s experiment settled it: X-rays scattering off
+electrons shift in wavelength exactly as if a particle of light had
+struck a particle of matter in a billiard-ball collision. The result won
+Compton the 1927 Nobel Prize and made the photon undeniable. That shift,
+tiny for visible light but large for gamma rays, is now a workhorse of
+physics: it sets how gamma rays deposit energy in detectors and in
+people, and it powers instruments from gamma-ray telescopes to medical
+imagers. In this experiment you play the collision out at a set of
+angles and check the photon picture quantitatively.</p>
+<p>It’s also a process you will never escape in this course: Compton
+scattering is the dominant fate of a gamma ray at these energies, so the
+continuum and edge it stamps onto every spectrum you take all semester
+are this experiment running quietly in the background of every other
+one. And astronomers run it in reverse: in <em>inverse Compton</em>
+scattering, photons steal energy from fast electrons, which is how some
+of the most violent objects in the sky, jets from black holes among
+them, broadcast at the highest energies we can see.</p>
+<p><strong>What you will measure:</strong> the energy of gamma rays
+scattered from a target as a function of scattering angle, testing the
+Compton formula and extracting the rest-mass energy of the electron from
+your own data.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<h3 class="cat">Timing and coincidence</h3>
+<details>
+<summary>Speed of Light</summary>
+<div class="body">
+<p>The speed of light is the speed limit of the universe, the conversion
+factor between space and time in relativity, and since 1983 the quantity
+that <em>defines</em> the meter. (A pleasing consequence: c can no
+longer be measured “wrong”; any disagreement with the accepted value is
+now, by definition, a measurement of your apparatus, which is exactly
+the spirit of this lab.) The chase for the number is old and honorable,
+opening in 1676 with Ole Rømer noticing that Jupiter’s moons ran late
+whenever the Earth was far away. Measuring it directly is a classic
+challenge: light crosses a lab bench in a few nanoseconds, so the
+experiment is really about mastering fast timing, the same craft that
+underlies GPS, particle physics triggers, and high-speed communication.
+Albert Michelson spent five decades refining this measurement, and the
+precision instruments he built for it made him the first American to win
+a science Nobel Prize (1907). Your light source is elegant in itself:
+positrons annihilating with electrons, sending two gamma rays flying
+apart at exactly the speed you are trying to measure.</p>
+<p><strong>What you will measure:</strong> the flight time of gamma rays
+over measured distances, giving you the speed of light. You will confirm
+the accepted value and quantify what limits the precision of your
+setup.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Cosmic Rays</summary>
+<div class="body">
+<p>The Earth is under constant bombardment by particles with energies
+far beyond any accelerator, and their arrival at ground level, mostly as
+muons, is a free beam of relativistic particles crossing your lab right
+now. Cosmic rays are where particle physics began: Victor Hess
+discovered them in 1912 by carrying electrometers up in balloon flights
+(a Nobel Prize in 1936, shared with Carl Anderson, whose positron also
+turned up in cosmic rays), and the positron, the muon, and the pion were
+all first seen in them. Detecting them teaches the coincidence
+technique: single detectors fire constantly on noise, but demanding that
+several fire <em>simultaneously</em> filters out everything except a
+real particle punching through all of them. That trick is the foundation
+of every modern particle physics experiment.</p>
+<p>The muons themselves have lately become a tool in their own right.
+<em>Muography</em> images things far too big to X-ray, using the muons
+as the penetrating rays: count how many arrive through an object from
+each direction, and a deficit means denser or thicker material along
+that line, a radiograph with muons instead of X-rays. In 2017 it
+revealed a previously unknown hidden chamber inside the Great Pyramid of
+Giza. The paddle-and-coincidence instrument you master here is the same
+species of device, pointed at the sky.</p>
+<p><strong>What you will measure:</strong> coincidence rates in a stack
+of scintillator paddles, the detection efficiency of each paddle, and
+the muon rate as a function of zenith angle, testing the characteristic
+cos²θ distribution of atmospheric muons.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Muon Lifetime</summary>
+<div class="body">
+<p>Every second, muons created by cosmic rays in the upper atmosphere
+rain down through you. Classically they shouldn’t make it: they live
+about two microseconds, far too short to survive the trip, and the fact
+that they arrive anyway is time dilation, special relativity operating
+overhead all day, every day. The lifetime itself is a fundamental
+number: the muon decays by the <em>weak interaction</em>, the theory
+Enrico Fermi invented for beta decay (part of the body of work behind
+his 1938 Nobel Prize), and the muon lifetime gives one of the cleanest
+measurements of that force’s strength, the Fermi constant. The muon
+itself was so unexpected when it appeared in cosmic rays that I. I. Rabi
+famously asked, “Who ordered that?” Nobody has answered him yet: the
+muon is a heavier copy of the electron, one of three “generations” of
+matter whose existence remains one of physics’ open questions, and
+precision measurements of its magnetic moment (the Fermilab muon g-2
+experiment) have spent the past decade probing whether it feels forces
+we haven’t discovered. In this experiment muons stop and die inside your
+detector, and you clock each one.</p>
+<p><strong>What you will measure:</strong> the distribution of time
+delays between a muon stopping in the scintillator and its decay, an
+exponential whose time constant is the muon lifetime. You will confirm
+the accepted value of about 2.2 microseconds and quantify the
+limitations of your measurement.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Nuclear Lifetime</summary>
+<div class="body">
+<p>An excited nucleus does not drop to its ground state on a schedule;
+it decays at a random moment, and the randomness is absolute. A quantum
+state carries no internal clock: two identical nuclei excited at the
+same instant decay at different, individually unpredictable times, and a
+nucleus that has already survived ten lifetimes is exactly as likely to
+decay in the next nanosecond as one excited a moment ago. Nothing inside
+it ages. That memorylessness is what forces the decay curve to be an
+exponential, and this experiment makes it unusually visible, because the
+<em>delayed coincidence</em> method times <em>individual</em> nuclei:
+catch the gamma ray that announces one nucleus entering its excited
+state, clock how long that single quantum system chooses to live, and
+watch thousands of such private decisions assemble into the
+exponential.</p>
+<p>The number you extract is quantum information twice over. First,
+through the time-energy uncertainty principle, a state that lives about
+100 nanoseconds cannot have a perfectly sharp energy: its intrinsic
+width is ħ/τ, a few <em>billionths</em> of an eV on a 14 keV transition,
+an energy defined to a part in 10¹³. Measuring the lifetime is measuring
+one side of an uncertainty relation; the other side, that absurdly
+narrow linewidth, is what makes this same iron-57 state the workhorse of
+Mössbauer spectroscopy (a Nobel Prize in 1961). Second, the lifetime’s
+<em>value</em> is a structure probe: the decay rate depends on how well
+the initial and final nuclear states overlap, so transitions where many
+nucleons move collectively run much faster than the lone-nucleon
+benchmark, while hindered rearrangements run slower by enormous factors,
+the same physics that stretches nuclear lifetimes from femtoseconds to,
+for some isomers, centuries. A lifetime is not a mere timestamp; it is a
+report on what the nucleons inside are doing.</p>
+<p><strong>What you will measure:</strong> the distribution of delays
+between the two gamma rays of a nuclear cascade, an exponential decay
+curve whose time constant is the lifetime of the intermediate state,
+roughly 100 nanoseconds.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Gamma-Gamma Angular Correlation <span class="badge">challenge lab</span></summary>
+<div class="body">
+<p>How do we know the spin of a nucleus, a quantum property with no
+classical handle to grab? One of the cleanest answers: when a nucleus
+emits two gamma rays in quick succession, the directions of the two are
+correlated, and the <em>shape</em> of that correlation is dictated by
+the angular momenta of the states involved. Measuring coincidence rate
+versus angle reads quantum numbers directly out of geometry. This
+technique built much of our map of nuclear structure, and its most
+famous descendant changed physics: Chien-Shiung Wu’s 1956 measurement of
+decay products’ directions from aligned nuclei, an angular-correlation
+experiment at heart, proved that nature distinguishes left from right
+(parity violation), earning Lee and Yang the Nobel Prize the following
+year. The method still earns its keep in materials science today:
+<em>perturbed angular correlation</em> watches how the magnetic and
+electric fields inside a solid twist the correlation pattern, turning a
+single radioactive atom into an embedded reporter on its crystal
+neighborhood.</p>
+<p><strong>What you will measure:</strong> the rate of coincident
+gamma-ray pairs from a cascade decay as a function of the angle between
+two detectors, testing the predicted correlation function W(θ) and
+comparing its anisotropy with the value expected for the known spin
+sequence.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>ACAR (Angular Correlation of Annihilation Radiation)</summary>
+<div class="body">
+<p>The positron was the first antimatter ever found: predicted by
+Dirac’s equation (Nobel Prize, 1933) and discovered in cosmic rays by
+Carl Anderson (Nobel Prize, 1936). When a positron meets an electron,
+the pair can even pause on the way out as <em>positronium</em>, a
+fleeting hydrogen-like atom with no nucleus at all, before annihilating
+into two gamma rays flying apart back-to-back. But only <em>exactly</em>
+back-to-back if the pair was at rest: any electron momentum tips the two
+photons slightly off 180 degrees. That tiny deviation turns annihilation
+into a probe of the electrons inside matter, sharp enough to map the
+<em>Fermi surface</em>, the momentum-space boundary that governs how
+metals conduct. The same physics runs the other direction in medicine:
+positron emission tomography (PET) scanners locate tumors by tracing
+annihilation photon pairs back to their origin.</p>
+<p><strong>What you will measure:</strong> the coincidence rate of
+annihilation photon pairs as a function of the small angle away from 180
+degrees, whose distribution reflects the momentum distribution of
+electrons in the sample.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<h3 class="cat">X-rays, materials and quantum</h3>
+<details>
+<summary>XRD (X-ray Diffraction)</summary>
+<div class="body">
+<p>Most solid matter is crystalline, endless repeating lattices of
+atoms, and the spacing of those lattices happens to match the wavelength
+of X-rays. Send X-rays into a crystal and they interfere, emerging only
+at angles satisfying <em>Bragg’s law</em>, so the diffraction pattern is
+a direct readout of atomic architecture. This one technique identified
+the structure of table salt, penicillin, and DNA, and it remains the
+daily workhorse of materials science, geology, and drug development:
+hand a lab an unknown powder, and diffraction names the crystal. Few
+methods have collected more Nobel Prizes: von Laue for discovering the
+diffraction itself (1914), the Braggs, father and son, for using it to
+solve structures (1915, with Lawrence Bragg still the youngest science
+laureate at 25), and the DNA double helix (1962) rested on Rosalind
+Franklin’s diffraction patterns.</p>
+<p><strong>What you will measure:</strong> diffraction patterns of
+crystalline powder samples, from which you extract lattice spacings via
+Bragg’s law, determine each crystal’s structure and lattice constant,
+and identify unknowns.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>XRF (X-ray Fluorescence)</summary>
+<div class="body">
+<p>Knock an inner electron out of an atom and the atom answers with an
+X-ray whose energy is unique to its element, a fingerprint set by
+nothing but the nuclear charge. That regularity, Moseley’s law, is why
+the periodic table is ordered by atomic number, and Moseley found it
+just before dying at Gallipoli at age 27; it is widely held that only
+his death kept the discovery from a Nobel Prize, and the X-ray
+spectroscopy it founded earned one for Manne Siegbahn in 1924. X-ray
+fluorescence turns the fingerprint into a practical superpower: museums
+use it to unmask forged paintings, geologists to assay ore, and
+regulators to find lead in toys, all without damaging the sample. It
+even does field work off-planet: the Mars rovers carry X-ray
+spectrometers that read Martian rocks element by element, the same
+physics you will point at unknowns here, running on another world.</p>
+<p><strong>What you will measure:</strong> the characteristic X-ray line
+energies of a range of elements, building your own Moseley plot from
+their systematics, and the elemental composition of unknown samples.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>SQUID (Superconducting Quantum Interference Device)</summary>
+<div class="body">
+<p>Quantum mechanics is usually the physics of the very small, but in a
+superconductor billions of electrons condense into a single quantum
+state you can wire into a circuit. Two consequences follow: current
+flows through an insulating gap with no voltage (the <em>Josephson
+effect</em>, predicted by Brian Josephson as a 22-year-old graduate
+student, a Nobel Prize in 1973), and magnetic flux through a
+superconducting loop is <em>quantized</em> in units of h/2e. A SQUID
+combines both into the most sensitive magnetometer ever built, able to
+detect the magnetic whisper of a human brain. And the Josephson junction
+has a second act underway: it is the building block of superconducting
+qubits, so the device you tune on this bench runs on the same physics at
+the heart of today’s quantum computers. In this lab, quantum mechanics
+stops being microscopic: interference effects show up directly on your
+instruments.</p>
+<p><strong>What you will measure:</strong> the current-voltage curve of
+a Josephson junction, and the periodic voltage modulation of the SQUID
+with applied magnetic flux, whose period is one flux quantum, giving you
+a measurement of h/2e.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>Saturation Spectroscopy <span class="badge">challenge lab</span></summary>
+<div class="body">
+<p>Atomic spectral lines carry exquisite information, including
+<em>hyperfine structure</em>, the tiny splittings from the interaction
+between the nucleus and its electrons. The catch: in a room-temperature
+gas, atoms rush in all directions and the Doppler effect smears the
+lines, burying the detail. Saturation spectroscopy is the elegant
+escape: two laser beams travel through the gas in opposite directions,
+and only atoms standing still (as seen along the beam) can talk to both
+at once, so the Doppler blur drops away. This <em>Doppler-free</em>
+trick is a foundation of laser cooling and the atomic clocks that keep
+GPS honest, and the physicists who developed laser spectroscopy to this
+precision collected Nobel Prizes for it twice: Bloembergen and Schawlow
+in 1981, and Hänsch and Hall in 2005 for pushing it to measurements of
+dizzying exactness. Hyperfine structure, the thing you will resolve, is
+not a spectroscopic curiosity but infrastructure: the SI second itself
+is <em>defined</em> as exactly 9,192,631,770 oscillations of a hyperfine
+transition in cesium, so splittings like these literally keep the
+world’s time.</p>
+<p><strong>What you will measure:</strong> the Doppler-free absorption
+spectrum of rubidium, resolving hyperfine transitions hidden inside the
+Doppler-broadened line and measuring their splittings against accepted
+values.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+<details>
+<summary>NMR (Nuclear Magnetic Resonance) <span class="badge">challenge lab</span></summary>
+<div class="body">
+<p>A proton is a tiny magnet, and in a magnetic field it precesses like
+a spinning top, at a frequency exactly proportional to the field.
+Nuclear magnetic resonance is the art of tipping those spins with a
+radio-frequency pulse and listening to them ring. From this one
+phenomenon grew two revolutions: NMR spectroscopy, which lets chemists
+read molecular structure from frequency shifts, and magnetic resonance
+imaging (MRI), which maps the water in your body without ionizing
+radiation. The trail of Nobel Prizes runs through the whole story: Rabi
+for the resonance method (1944), Bloch and Purcell for NMR in ordinary
+matter (1952), and Lauterbur and Mansfield for turning it into MRI
+(2003). The heart of both is what you study here: resonance, precession,
+and how spins relax back to equilibrium.</p>
+<p><strong>What you will measure:</strong> the resonance frequency of
+protons in a known magnetic field, giving the proton’s gyromagnetic
+ratio, and the relaxation times that characterize how the spins return
+to equilibrium, the same quantities that generate contrast in an MRI
+image.</p>
+
+<span class="lablink soon">Lab content link coming soon</span>
+</div>
+</details>
+
+</main>
+<footer>Modern Physics Laboratory · Department of Physics &amp; Astronomy, University of
+Notre Dame · Questions: ask in lab, or contact the instructor or TA.</footer>
+</body>
+</html>
