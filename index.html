@@ -17,34 +17,37 @@ Instructor: Ali Hanks · TA: Wesley Sutton</div>
 
 <h2>Welcome</h2>
 <div class="sub"><p>The objective of this course is to become familiar with the equipment
-and techniques of experimental physics: radiation detectors and their
-signals, electronic signal processing (timing and energy), data
-acquisition, statistical analysis and curve fitting, and the
-communication of results in the forms working physicists actually use,
-journal-style reports, posters, and talks. Most of the experiments in
-this lab replicate breakthrough measurements that earned (or famously
-deserved) Nobel Prizes; you will reproduce them with research-grade
-equipment.</p></div>
+and techniques of experimental physics. Many of the experiments center
+on radiation detectors and the electronics that process their signals
+(timing and energy), while others are built around entirely different
+apparatus, each designed specifically for the phenomenon being
+investigated. Across all of them you will develop the common toolkit of
+the experimentalist: data acquisition, statistical analysis and curve
+fitting, and the communication of results in the forms physicists
+actually use, journal-style reports, posters, and talks. Most of the
+experiments in this lab replicate breakthrough measurements that earned
+(or famously deserved) Nobel Prizes; you will reproduce them with
+research-grade equipment.</p></div>
 
 <h2>Course Schedule</h2>
 <div class="sub"><p>The semester at a glance. The authoritative version lives in the
 syllabus; updates appear here as they happen.</p></div>
 <table>
 <tr><th>Week</th><th>Dates (T/Th)</th><th>Activity</th><th>Due</th></tr>
-<tr><td>1</td><td>Aug 25, 27</td><td>Safety & radiation, statistics & curve fitting, station tour, experiment walk-through</td><td>Lab-preference form [end of week 1]</td></tr>
+<tr><td>1</td><td>Aug 25, 27</td><td>Safety & radiation, statistics & curve fitting, station tour, experiment walk-through</td><td></td></tr>
 <tr><td>2</td><td>Sep 1, 3</td><td>Bootcamp, half 1 (energy or timing, by group)</td><td>Week-1 statistics homework TBD</td></tr>
-<tr><td>3</td><td>Sep 8, 10</td><td>Bootcamp, half 2</td><td>Notebook submission #1 Tue; <strong>Bootcamp worksheet + write-up</strong> end of week</td></tr>
+<tr><td>3</td><td>Sep 8, 10</td><td>Bootcamp, half 2</td><td>Notebook submission #1 Tue; <strong>Lab-preference form</strong> end of week; <strong>Bootcamp worksheet + write-up</strong> end of week</td></tr>
 <tr><td>4</td><td>Sep 15, 17</td><td><strong>Rotation 1</strong> begins</td><td>Notebook submission #2 Tue</td></tr>
 <tr><td>5</td><td>Sep 22, 24</td><td>Rotation 1</td><td></td></tr>
-<tr><td>6</td><td>Sep 29, Oct 1</td><td>Rotation 1: analysis & writing</td><td><strong>Report</strong> due Fri Oct 2</td></tr>
-<tr><td>7</td><td>Oct 6, 8</td><td><strong>Rotation 2</strong> begins</td><td>report reviews returned; revisions due ~Oct 13</td></tr>
+<tr><td>6</td><td>Sep 29, Oct 1</td><td>Rotation 1: analysis & writing</td><td><strong>Report 1</strong> due Fri Oct 2</td></tr>
+<tr><td>7</td><td>Oct 6, 8</td><td><strong>Rotation 2</strong> begins</td><td>Report 1 reviews returned; revisions due ~Oct 13</td></tr>
 <tr><td>8</td><td>Oct 13, 15</td><td>Rotation 2</td><td></td></tr>
 <tr><td></td><td>Oct 17–25</td><td><strong>Fall break</strong></td><td></td></tr>
-<tr><td>9</td><td>Oct 27, 29</td><td>Rotation 2: analysis & poster</td><td><strong>Poster</strong> file due Mon Nov 2 (printing)</td></tr>
-<tr><td>10</td><td>Nov 3, 5</td><td><strong>Tue: POSTER SESSION</strong> · Th: <strong>Rotation 3</strong> begins</td><td>poster presentation Tue</td></tr>
+<tr><td>9</td><td>Oct 27, 29</td><td>Rotation 2: analysis & writing</td><td><strong>Report 2</strong> due Fri Oct 30</td></tr>
+<tr><td>10</td><td>Nov 3, 5</td><td><strong>Rotation 3</strong> begins</td><td>Report 2 reviews (instructor + peer) returned; revisions due ~Nov 10</td></tr>
 <tr><td>11</td><td>Nov 10, 12</td><td>Rotation 3</td><td></td></tr>
-<tr><td>12</td><td>Nov 17, 19</td><td>Rotation 3</td><td></td></tr>
-<tr><td>13</td><td>Nov 24</td><td>Rotation 3 wrap (Tue only, Thanksgiving Nov 25–29)</td><td>TBD</td></tr>
+<tr><td>12</td><td>Nov 17, 19</td><td>Rotation 3: analysis & poster</td><td><strong>Poster</strong> file due Mon Nov 23 (printing)</td></tr>
+<tr><td>13</td><td>Nov 24</td><td><strong>POSTER SESSION</strong> (Tue only; Thanksgiving Nov 25–29)</td><td>poster presentation Tue</td></tr>
 <tr><td>14</td><td>Dec 1, 3</td><td><strong>Research presentations</strong></td><td></td></tr>
 <tr><td>15</td><td>Dec 8</td><td>Research presentations (last class meeting)</td><td></td></tr>
 </table>
@@ -206,20 +209,26 @@ your own data.</p>
 <div class="body">
 <p>The speed of light is the speed limit of the universe, the conversion
 factor between space and time in relativity, and, since 1983, the
-quantity that defines the meter. One consequence of that definition is
-worth thinking about while you calibrate: c can no longer be measured
-“incorrectly,” so any disagreement with the accepted value is really a
-measurement of your apparatus, which is exactly the spirit of this lab.
-The chase for this number has a long history, beginning in 1676 with Ole
-Rømer noticing that the moons of Jupiter ran late whenever the Earth was
-far away, and measuring it directly remains a genuine challenge. Light
-crosses a lab bench in a few nanoseconds, so the experiment is really an
-exercise in mastering fast timing, the same techniques that underlie
-GPS, particle-physics triggers, and high-speed communication. Albert
-Michelson spent five decades refining this measurement, and the
-precision instruments he built for it made him the first American to win
-a science Nobel Prize (1907). Our light source is a fitting one:
-positrons annihilating with electrons, sending pairs of gamma rays
+quantity that defines the meter. None of this was obvious at the start.
+For most of history it was an open question whether light traveled at a
+finite speed at all; Galileo tried to time it with lanterns on distant
+hilltops and could only conclude that it was too fast for him to
+measure. The first real determination came in 1676, when Ole Rømer
+noticed that the moons of Jupiter ran late whenever the Earth was
+farther away, with the delay revealing the extra time their light needed
+to reach us. By Albert Michelson’s era the value itself was known, and
+the reason he kept pushing the precision for five decades is telling:
+the sharpest available test of whether the Earth moves through a
+hypothetical “luminiferous aether” was to compare light’s travel along
+different directions, and his interferometer finding no difference at
+all, to remarkable precision, helped set the stage for special
+relativity. The instruments he built in that pursuit made him the first
+American to win a science Nobel Prize (1907). Measuring c directly
+remains a genuine challenge, since light crosses a lab bench in a few
+nanoseconds, making this experiment an exercise in mastering fast
+timing, the same techniques that underlie GPS, particle-physics
+triggers, and high-speed communication. Our light source is a fitting
+one: positrons annihilating with electrons, sending pairs of gamma rays
 flying apart at exactly the speed you are trying to measure.</p>
 <p><strong>What you will measure:</strong> the flight time of gamma rays
 over measured distances, giving you the speed of light. You will confirm
